@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Verifica se o Ollama já está instalado
+if ! command -v ollama &> /dev/null; then
+    echo "Instalando Ollama..."
+    curl -fsSL https://ollama.ai/install.sh | sh
+else
+    echo "Ollama já está instalado"
+fi
+
+# Puxa o modelo llama2
+echo "Baixando modelo llama2..."
+ollama pull llama2
+
+echo "Configuração do Ollama concluída!" 

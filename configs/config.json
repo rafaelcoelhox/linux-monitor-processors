@@ -1,0 +1,12 @@
+{
+    "monitoringInterval": 60,
+    "cpuThreshold": 80.0,
+    "memoryThreshold": 80.0,
+    "processesToWatch": [
+        "nginx",
+        "mysql",
+        "mongodb"
+    ],
+    "whatsappNumber": "5511999999999",
+    "ollamaEndpoint": "http://localhost:11434"
+}
